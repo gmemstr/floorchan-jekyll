@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+Floorchan website
+
+Re-created & ported to Jekyll by Gabriel Simmer (@gmemstr)
+-->
+
+<head>
+
+  <title>Floorchan / {{ page.title }}</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <link href="/assets/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="masthead">
+    <h2>Floorchan</h2>
+    <div align="right">Donations for Jul.: 100.00%</div>
+    <i>"Gonna kill more than just your processes, boy."</i>
+  </div>
+  {% include sidebar.html %}
+  <hr/>
+
+  {{content}}
+
+  <div id="footer">
+    <hr/>
+    <center>
+      <p>Questions? Contact camoyoshi@trioptimum.com. Written in nano, powered by Apache.
+        <br>
+        <a href="http://www.debian.org/">
+          <img border="false" src="/assets/images/button-4.gif">
+        </a>
+        <span style="display: inline-block; text-align: center;"><a style="text-decoration: none;" href='http://www.monitor.us/free-monitoring-features/website-uptime-monitoring'><img src='http://monitorusportal.s3.amazonaws.com/badges/monbadgesWhiteBG120-40.png' title='Monitor.us - Free website, server &amp; network monitoring tool' border=0 /><div style="color:#028EDB; font-size: 11px"></div></a></span>
+        <a href="https://twitter.com/FloorchanNetwrk" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @FloorchanNetwrk</a>
+        <script>
+          ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = p + '://platform.twitter.com/widgets.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          }(document, 'script', 'twitter-wjs');
+        </script> <a href="http://steamcommunity.com/groups/floorchan">Steam Group</a>
+        <hr>
+        <script type="text/javascript">
+          <!--
+          google_ad_client = "ca-pub-5338531954679400";
+          /* Floorchan.org bottom banner */
+          google_ad_slot = "9430499219";
+          google_ad_width = 728;
+          google_ad_height = 90;
+          //-->
+        </script>
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+    </center>
+    </p>
+  </div>
+
+
+  </div>
+</body>
+
+</html>

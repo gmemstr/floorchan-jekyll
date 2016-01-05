@@ -1,0 +1,60 @@
+---
+title: Rules
+layout: default 
+---
+<div id="page_content">
+    <h2>General rules (applies to all services and aspects of Floorchan)</h2>
+    <ul>
+        <li>Don't touch stuff that doesn't belong to you.</li>
+        <li>Don't be mean to other users.</li>
+        <li>Don't try to hack into other users' accounts.</li>
+        <li>Don't purposefully try to crash the server.</li>
+        <li>Be considerate of others.</li>
+    </ul>
+    <h2>SSH rules</h2>
+    <ul>
+        <li>Please be considerate when running tasks that may consume large amounts of CPU, RAM, Network, or Disk I/O.</li>
+        <li>You are responsible for backing up all of your files. Floorchan is not responsible for loss of data in the event of human error, hardware/software failure, or factors beyond our own control.</li>
+        <li>While we always try to maintain the highest level of security possible, please be aware that Floorchan is shared between many users and any and all content that you upload should be considered public.</li>
+        <li>All content that you upload to our server is always your property.</li>
+        <li>If you wish to use your account to run cronjobs, eggdrop scripts, or application servers, please contact camoyoshi@trioptimum.com first. Failure to do so will cause your account to be instantly deleted.</li>
+        <li>You may store up to 5GB of data in your /home directory.</li>
+    </ul>
+    <h2>FTP usage</h2>
+    <ul>
+        <li>You have a public FTP folder located at ~/public_ftp/. Placing files into this area will publish them via FTP and HTTP, at the following addresses: ftp://ftp.floorchan.org/users/yourname/ &amp; http://ftp.floorchan.org/users/yourname/</li>
+        <li>We use proftpd for our FTP daemon.</li>
+        <li>Our FTP server only accepts anonymous connections and will not accept uploads. If you wish to upload files use SFTP (sometimes called SSH FTP or FTP over SSH) instead.</li>
+    </ul>
+    <h2>WWW Userpages usage</h2>
+    <ul>
+        <li>You have a public HTTP folder located at ~/public_html/. Placing files into this area will publish them via HTTP only, at the address (http://users.floorchan.org/~yourname).</li>
+        <li>For our HTTP daemon, we use Apache2 with PHP &amp; CGI.</li>
+        <li>If your website uses any PHP or CGI, please be considerate and only run safe functions (we have safe_mode = on at all times).</li>
+        <li>Don't run scripts that use lots of CPU or RAM, be considerate.</li>
+        <li>In order to prevent such situations, the following software is banned:
+            <ul>
+                <li>Wordpress</li>
+                <li>PhpMyAdmin</li>
+                <li>Concrete5</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Server Restrictions</h2>
+    <ul>
+        <li>Maximum number of simultaneous logins: 2</li>
+        <li>Maximum number of simultaneous processes: 100</li>
+        <li>Maximum amount of allocatable memory: 4GB</li>
+        <!-- <li>Maximum amount of usable disk space: 5GB</li> -->
+    </ul>
+    <!--
+<h2>DNS Server Usage</h2>
+<ul>
+<li>This is a resolving, non-authoritative DNS server that anyone is allowed to use.</li>
+<li>That being said, don't attempt to degrade the server's performance, or poison its cache.</li>
+</ul>
+-->
+</div>
+</div>
+<!--#include virtual="/footer.txt" -->
+</div>

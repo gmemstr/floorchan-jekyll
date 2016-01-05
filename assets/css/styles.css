@@ -1,0 +1,85 @@
+#masthead {}
+#top_nav {
+  bottom: 0;
+  left: 0;
+  height: 57px;
+  line-height: 57px;
+  padding: 0 24px 0 24px;
+  width: 90%;
+  margin: 0 auto;
+  background: #000000;
+}
+#top_nav a {
+  text-decoration: underline color: #00FF00;
+}
+#top_nav li {
+  margin: 0 1em 0 0;
+  padding: 0 1em 0 1em;
+}
+#top_nav li.active {
+  background: #ffffff;
+}
+#top_nav li.active a {
+  color: rgb(150, 150, 150);
+}
+#top_nav ul {
+  list-style: none;
+}
+#top_nav ul li {
+  float: left;
+}
+#container {
+  min-width: 600px;
+}
+#left_col {
+  width: 200px;
+  float: left;
+}
+#page_content {
+  margin-left: 225px;
+}
+#footer {
+  clear: both;
+}
+
+/* CSS decoration */
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+a:visited {
+  color: rgb(150, 150, 150);
+}
+a:active {
+  color: rgb(150, 150, 150);
+}
+body {
+  font-family: Courier New, Courier;
+  background-color: rgb(0, 0, 0);
+  color: #00FF00;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Courier New, Courier;
+}
+h1 {
+  color: #00FF00;
+}
+h2 {
+  color: #00FF00;
+}
+h3 {
+  color: #00FF00;
+}
+h4 {
+  color: #00FF00;
+}
+h5 {
+  color: #00FF00;
+}
+h6 {
+  color: #00FF00;
+}
+ul li {
+  margin-top: 10px;
+  /* or however many pixels distance you want */
+}
